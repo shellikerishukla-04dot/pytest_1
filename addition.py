@@ -1,15 +1,16 @@
 import sys
 
+def add(a, b):
+    return a + b
 
-    # Check if exactly two additional arguments are passed
-    if len(sys.argv) != 3:
-        print("Usage: python add.py <num1> <num2>")
-        sys.exit(1)
-    
-    # Convert command-line arguments to numbers (float)
-   
-    
-    # Perform addition
-    result = a + b
-    print("Sum:", result)
+if _name_ == "_main_":
+    if len(sys.argv) == 3:   
+        x = float(sys.argv[1])
+        y = float(sys.argv[2])
+        print("User provided input values:")
+    else:  
+        print("No input given - using default values:")
+        x = 10
+        y = 20
 
+    print("sum:", add(x, y))
