@@ -3,7 +3,7 @@ import sys
 def add(a, b):
     return a + b
 
-if _name_ == "_main_":
+if name == "main":
     if len(sys.argv) == 3:   
         x = float(sys.argv[1])
         y = float(sys.argv[2])
